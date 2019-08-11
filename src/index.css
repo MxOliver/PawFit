@@ -1,13 +1,242 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+.content {
+	margin-left: 2em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@import url("https://fonts.googleapis.com/css?family=Beth+Ellen|Oswald|Red+Hat+Text&display=swap");
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* 
+font-family: 'Beth Ellen', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Red Hat Text', sans-serif;
+*/
+
+p,
+h6,
+h5 {
+	font-family: "Red Hat Text";
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Oswald";
+}
+
+.col {
+	flex-direction: column;
+}
+
+.full-height {
+	height: 100vh;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.size-up {
+	font-size: 1.5rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+}
+
+.align-center-row {
+	display: flex;
+	justify-content: center;
+}
+
+.align-center-all {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.align-center-col {
+	display: flex;
+	align-items: center;
+}
+
+.logo-text {
+	font-family: "Beth Ellen";
+}
+
+a {
+	color: black !important;
+	/* override bootstrap defaults */
+}
+
+a:hover {
+	text-decoration: underline !important;
+	/* override bootstrap defaults */
+}
+
+.full-width {
+	width: 99%;
+}
+
+.solid-white {
+	background-color: white;
+}
+
+.hero {
+	height: 45vh;
+
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+.primary {
+	color: #1f4b99;
+}
+
+.secondary {
+	color: #d78742;
+}
+
+.tirtiary {
+	color: #6b9fa1;
+}
+
+.primary-bg {
+	background-color: #1f4b99;
+}
+
+.secondary-bg {
+	background-color: #d78742;
+}
+
+.tirtiary-bg {
+	background-color: #6b9fa1;
+}
+
+.white-text {
+	color: white;
+}
+
+/* ["#1F4B99", "#6B9FA1", "#FFE39F", "#D78742", "#9E2B0E"] */
+
+.gap-top-sm {
+	margin-top: 1em;
+}
+
+.gap-right-xs {
+	margin-right: 0.5em;
+}
+
+.gap-right-sm {
+	margin-right: 1em;
+}
+
+.gap-right-md {
+	margin-right: 3em;
+}
+
+.gap-right-lg {
+	margin-right: 5em;
+}
+
+.gap-left-xs {
+	margin-left: 0.5em;
+}
+
+.grid-height {
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	height: 25em;
+}
+
+.col-height {
+	height: 25em;
+	margin-bottom: 5em;
+}
+
+@media only screen and (max-width: 900px) {
+	.grid-height {
+		display: flex;
+		flex-direction: row;
+		overflow: hidden;
+		height: 90%;
+	}
+}
+
+.gap-left-sm {
+	margin-left: 1em;
+}
+
+.gap-left-md {
+	margin-left: 3em;
+}
+
+.gap-left-lg {
+	margin-left: 5em;
+}
+
+.img-crop {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.gap-top-sm {
+	margin-top: 1em;
+}
+
+.gap-top-md {
+	margin-top: 3em;
+}
+
+.gap-top-lg {
+	margin-top: 5em;
+}
+
+.gap-bottom-sm {
+	margin-bottom: 1em;
+}
+
+.gap-bottom-md {
+	margin-bottom: 3em;
+}
+
+.gap-bottom-lg {
+	margin-bottom: 5em;
+}
+
+.gap-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.gap-between-col {
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+.space-evenly {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.align-baseline {
+	display: flex;
+	align-items: baseline;
 }
